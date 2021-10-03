@@ -22,10 +22,10 @@
   },
   "scripts": {
     "test": "protractor JSFiles/configuration.js",
-    "pretest": "tsc",
-    "cucumbertest": "protractor JSFiles/cucumberconfig.js",
+    "pretest": "tsc -p e2e/tsconfig.e2e.json",
+    "cucumbertest": "protractor e2e/e2ejs/cucumberconfig.js",
     "protractor": "./node_modules/protractor/built/cli.js",
-    "webdriver-update": "./node_modules/.bin/webdriver-manager update"
+    "selenium": "webdriver-manager update --ignore_ssl --versions.chrome 93.0.4577.82 && webdriver-manager start --versions.chrome 93.0.4577.82"
   },
   "repository": {
     "type": "git",

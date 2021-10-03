@@ -1,4 +1,4 @@
-import {Config} from "protractor";
+import { Config } from "protractor";
 import * as reporter from "cucumber-html-reporter";
 
 
@@ -28,7 +28,7 @@ export let config: Config = {
         
         //tags: "Demo",
         require: [
-          './stepDefinations/*.js', // accepts a glob,
+          './bddsteps/*.js', // accepts a glob,
         
         ]
       },

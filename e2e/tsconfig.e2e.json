@@ -1,0 +1,19 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./e2ejs",
+        "module": "commonjs",
+        "target": "es6",
+        "types": [
+            "jasmine",
+            "jasminewd2",
+            "node"
+        ],
+        "skipLibCheck": true
+    },
+    "include":[
+        "cucumber.config.ts",
+        "cucumber-automation.config.ts",
+        "**/*"
+    ],
+}
