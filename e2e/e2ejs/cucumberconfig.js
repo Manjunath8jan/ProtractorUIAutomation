@@ -14,7 +14,7 @@ exports.config = {
     // Spec patterns are relative to the configuration file location passed
     // to protractor (in this example conf.js).
     // They may include glob patterns.
-    specs: ['./../features/demo.feature'],
+    specs: ['./../features/*.feature'],
     cucumberOpts: {
         // require step definitions
         // tags:"@AngularTesting",
@@ -22,6 +22,7 @@ exports.config = {
         //tags: "Demo",
         require: [
             './bddsteps/*.js',
+            './support/*.js'
         ]
     },
     onComplete: () => {

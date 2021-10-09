@@ -7,5 +7,5 @@ Feature: Demo feature
         Then user enters "<url>"
 
         Examples:
-            | url                |
-            | https://google.com |
+            | url                     |
+            | https://www.upwork.com/ |
