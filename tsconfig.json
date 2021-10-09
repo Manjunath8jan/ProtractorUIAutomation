@@ -1,0 +1,45 @@
+{
+    "compileOnSave": false,
+    "exclude":[
+        "node_modules",
+    ],
+    "compilerOptions":{
+        "outDir": "./dist/out-tsc",
+        "baseUrl": "src",
+        "types": [],
+        "paths": {
+            "@app/core/*": [
+                "app/core/*"
+            ],
+            "@app/shared/*": [
+                "app/shared/*"
+            ],
+            "@app/views/*": [
+                "app/views/*"
+            ],
+            "@config/*": [
+                "config/*"
+            ],
+            "@env/*":[
+                "environments/*"
+            ],
+            "@assets/*": [
+                "assets/*"
+            ]
+        },
+        "sourceMap":true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es6",
+        "typeRoots":[
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2017",
+            "dom",
+            "esnext.asynciterable"
+        ]
+    }
+}
