@@ -1,6 +1,7 @@
 /node_modules
 /.vs
 /.e2ejs
+/e2e/e2ejs
 *.html
 cucumberreport.json
 /dist
