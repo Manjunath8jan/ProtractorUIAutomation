@@ -2,6 +2,9 @@
 /.vs
 /.e2ejs
 /e2e/e2ejs
+/dist
+/out-tsc
+/target
 *.html
 cucumberreport.json
 /dist
