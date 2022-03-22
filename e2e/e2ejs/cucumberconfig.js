@@ -17,7 +17,8 @@ exports.config = {
     specs: ['./../features/*.feature'],
     cucumberOpts: {
         // require step definitions
-        // tags:"@AngularTesting",
+        strict: false,
+        tags: [],
         format: 'json:./cucumberreport.json',
         //tags: "Demo",
         require: [
