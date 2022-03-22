@@ -13,7 +13,7 @@
     },
     "include":[
         "cucumber.config.ts",
-        "cucumber-automation.config.ts",
+        "cucumberconfig.ts",
         "**/*"
     ],
 }

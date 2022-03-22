@@ -1,5 +1,7 @@
 import { Config } from "protractor";
 import * as reporter from "cucumber-html-reporter";
+import { classCommandLineUtilites } from "./utilities/commandlineUtilities";
+
 
 
 
@@ -23,7 +25,8 @@ export let config: Config = {
     specs: ['./../features/*.feature'],
     cucumberOpts: {
         // require step definitions
-       // tags:"@AngularTesting",
+        strict: true,
+        tags: [], 
         format:'json:./cucumberreport.json',
         
         //tags: "Demo",
@@ -53,8 +56,5 @@ export let config: Config = {
 
 
       }
-
-  
-  
-  };
+    };
   

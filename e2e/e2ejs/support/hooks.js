@@ -44,6 +44,6 @@ cucumber_1.Before((scenario) => {
     exports.testCaseID = scenario.pickle.name;
     console.log(scenario.pickle.name);
     const featureName = scenario.sourceLocation.uri.split(/features([\\/]*)+(.*).feature/)[2];
-    //Context.featureName = featureName;
+    Context_1.Context.featureName = featureName;
 });
 //# sourceMappingURL=hooks.js.map

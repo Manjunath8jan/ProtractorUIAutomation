@@ -25,7 +25,8 @@
     "pretest": "tsc -p e2e/tsconfig.e2e.json",
     "cucumbertest": "protractor e2e/e2ejs/cucumberconfig.js",
     "protractor": "./node_modules/protractor/built/cli.js",
-    "selenium": "webdriver-manager update --ignore_ssl --versions.chrome 93.0.4577.82 && webdriver-manager start --versions.chrome 93.0.4577.82"
+    "selenium": "webdriver-manager update --ignore_ssl --versions.chrome 99.0.4844.74 &&  webdriver-manager start --versions.chrome 99.0.4844.74",
+    "build-e2e": "tsc -p e2e/tsconfig.e2e.json"
   },
   "repository": {
     "type": "git",
